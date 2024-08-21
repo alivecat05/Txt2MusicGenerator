@@ -1,0 +1,9 @@
+audiocraft==1.4.0a1
+einops==0.8.0
+modelscope==1.17.0
+numpy==2.1.0
+streamlit==1.37.1
+torch==2.1.0+cu118
+torchaudio==2.1.0+cu118
+transformers==4.42.4
+translate==3.6.1
