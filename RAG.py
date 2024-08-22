@@ -147,7 +147,7 @@ def prompt_enhance_RAG(question: str, theme: str) -> str:
 
 
 
-if __name__=='__main__':
-    rel = prompt_enhance_RAG("水流的声音","印象派")
-    print("rel: ",rel)
+# if __name__=='__main__':
+#     rel = prompt_enhance_RAG("水流的声音","印象派")
+#     print("rel: ",rel)
     
