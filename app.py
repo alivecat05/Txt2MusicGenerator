@@ -49,8 +49,8 @@ def main():
         # 网站大标题
         st.title("Text2Music音频生成器")
         # 添加可扩展的解释区域
-        with st.expander("介绍"):
-            st.write("Text2Music是一款基于audiocraft音频模型与浪潮源大模型的根据提示词生成音频的应用, 您可以在下方输入想要的声音, 稍等片刻就会有惊艳的声音给到你。")
+        # with st.expander("介绍"):
+        #     st.write("Text2Music是一款基于audiocraft音频模型与浪潮源大模型的根据提示词生成音频的应用, 您可以在下方输入想要的声音, 稍等片刻就会有惊艳的声音给到你。")
         
         # 用户输入区域，用于输入描述文本
         text_area = st.text_area("请输入提示词：", value="你可以输入像'水流的声音,鸟叫,爵士乐曲,钢琴,吉他'等等", key="prompt")
@@ -58,8 +58,8 @@ def main():
         # 定义RAG ON按钮
         
         
-        
-        if st.button("选择风格", key='start'):
+         
+        if st.button("选择风格", key='start', use_container_width=True):
                 # 切换RAG模式
             st.session_state['rag_mode'] = not st.session_state['rag_mode']
             # 如果RAG模式被激活，显示输入区域
@@ -67,22 +67,26 @@ def main():
             theme = st.text_area("请输入风格：", key="style", disabled=False)
             with st.expander("推荐输入"):
                 audio_Gen.style_recommand()
-            button_col1, button_col2 = st.columns([3, 1])
+            button_col1, button_col2 = st.columns([4,1])
             with button_col1:          
-                    if st.button("StyleGO", key='Go'):
+                    if st.button("注入音乐能量", key='Go', type="primary"):
                         import RAG
                         st.session_state['newprompt'] = RAG.prompt_enhance_RAG(text_area, theme)
                         st.session_state['flag'] = 1  # 设置标志位用于其他逻辑处理
-                        st.success("RAG Done!")
+                        st.success("注入成功，准备生成音乐")
 
             with button_col2:
-                if st.button("了解这个风格"):
+                if st.button("了解这个风格", ):
                     st.session_state['show_style_description'] = 1  # 显示文本窗
-
+            if st.session_state['show_style_description'] == 1:
+                import style
+                with st.expander("风格介绍", expanded=True):
+                    generate_text = style.getMusicStyle(theme)
+                    st.write(generate_text)
         # 选择生成时长的滑块
         time_slider = st.slider("选择生成时长（秒）", 2, 20, 20)
 
-        if st.button("Generate!!!!", key='Generate'):
+        if st.button("生成!!!!", key='Generate', use_container_width=True, type="primary"):
             st.session_state['flag'] = 1
         
         # 根据标志位选择提示词
@@ -93,14 +97,14 @@ def main():
             print(f'textNOW: {translated_text}')
 
             if translated_text and time_slider:
-                # 显示用户输入的描述和时长
-                st.json(
-                    {
-                        "描述": translated_text,
-                        "时长": time_slider
-                    }
-                )
-                # 创建占位符
+                # # 显示用户输入的描述和时长
+                # st.json(
+                #     {
+                #         "描述": translated_text,
+                #         "时长": time_slider
+                #     }
+                # )
+                # # 创建占位符
                 status_placeholder = st.empty()
                 status_placeholder.subheader("正在生成音乐...")
                 torch.cuda.empty_cache()
@@ -122,24 +126,7 @@ def main():
                 # 清理生成过程中的显存
                 torch.cuda.empty_cache()
 
-        # 右侧显示文本窗的逻辑处理
-        if st.session_state['show_style_description'] == 1:
-            import style
-            generate_text = style.getMusicStyle(theme)
-            st.markdown(
-                f"""
-                <div style="
-                    border: 2px solid red; 
-                    padding: 10px; 
-                    border-radius: 10px;
-                    background-color: #f9f9f9;
-                    word-wrap: break-word;
-                    margin-top: 20px;
-                    ">
-                    <p>{generate_text}</p>
-                </div>
-                """, unsafe_allow_html=True
-            )
+
 
 # 运行主函数
 if __name__ == "__main__":
