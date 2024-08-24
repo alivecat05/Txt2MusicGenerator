@@ -7,3 +7,4 @@ torch==2.1.0+cu118
 torchaudio==2.1.0+cu118
 transformers==4.42.4
 translate==3.6.1
+-e git+http://github.com/facebookresearch/audiocraft.git#egg=audiocraft
