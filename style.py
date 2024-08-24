@@ -6,6 +6,7 @@ from modelscope import snapshot_download
 import gc
 from translate import Translator
 import streamlit as st
+import RAG
 # 定义大语言模型类
 class LLM:
     """
@@ -38,9 +39,9 @@ class LLM:
                     attention_mask=attention_mask,
                     do_sample=True,
                     max_length=1024,  # 减少生成文本的长度
-                    temperature=0.4,
-                    # top_k=30,  # 控制多样性
-                    # top_p=0.5   # 控制多样性
+                    temperature=0.5,
+                    top_k=10,  # 控制多样性
+                    top_p=0.2   # 控制多样性
                 )
         output = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
 
@@ -61,17 +62,12 @@ class LLM:
 print("> Create Yuan2.0 LLM...")
 model_path = './Yuan2-2B-Mars-hf'
 llm = LLM(model_path)
+document_path = "./knowledgeStyle.txt"
 def getMusicStyle(style: str) -> str:
-    feature = "详细的风格特点"
-    man = "代表人物"
-    artwork = "代表作品"
-    content = [feature, man, artwork]
-    outputs_list = []  # 使用列表来收集所有的output
-
-    for i in content:
-        output = llm.generate(style, i)
-        outputs_list.append(output)  
-    outputs = '<br>'.join(outputs_list)
+    index = RAG.VectorStoreIndex(document_path, RAG.embed_model)
+    _style = index.query(style)
+    content = "风格特点,代表人物，代表作品"
+    outputs = llm.generate(_style, content)
 
     return outputs
 
