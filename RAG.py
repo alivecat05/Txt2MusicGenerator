@@ -81,10 +81,10 @@ class LLM:
         self.model = AutoModelForCausalLM.from_pretrained(model_path, torch_dtype=torch.float16, trust_remote_code=True).to('cuda:0')
         print(f'Loading Yuan2.0 model from {model_path}.')
 
-    def generate(self, question: str, theme: List[str], temperature: float = 0.7) -> str:
+    def generate(self, question: str, theme: List[str], temperature: float) -> str:
         if theme:
             theme_text = " and ".join(theme)
-            prompt = f'Describe a vivid and emotional description combining {question} with music style {theme_text}.'
+            prompt = f'Describe a vivid and musical description combining {question} with {theme_text} music style .'
         else:
             prompt = question
 
@@ -123,7 +123,7 @@ class LLM:
             description = output.strip()
 
         # 去除与提示重复的部分
-        prompt_text = f'Describe a vivid and emotional description combining {question} with music style {theme_text}.'
+        prompt_text = f'Describe a vivid and musical description combining {question} with music style {theme_text}.'
         if description.startswith(prompt_text):
             description = description[len(prompt_text):].strip()
 
@@ -135,12 +135,12 @@ model_path = './Yuan2-2B-Mars-hf'
 llm = LLM(model_path)
 
 def prompt_enhance(question: str) -> str:
-    return llm.generate(question, [], temperature=1.0)
+    return llm.generate(question, [], temperature=0.3)
 
 def prompt_enhance_RAG(question: str, theme: str) -> str:
     # 从向量库中检索最相似的主题内容
     _theme = index.query(theme)
-    result = llm.generate(question, _theme, temperature=1.0)
+    result = llm.generate(question, _theme, temperature=0.3)
     gc.collect()
     torch.cuda.empty_cache()
     return result
