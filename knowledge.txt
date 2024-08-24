@@ -1,67 +1,43 @@
-
 Classical Music
 
-Baroque: Opulent and dramatic, Baroque music features intricate patterns and contrasts, creating an atmosphere of grandeur and emotional depth.
-
-Classical: Elegant and balanced, Classical music offers clear melodies and structured forms, evoking a refined and serene mood.
-
-Romantic: Passionate and expressive, Romantic music explores deep emotions and vivid imagery, creating a sense of intense personal and dramatic experience.
-
-Impressionism: Subtle and atmospheric, Impressionist music uses fluid harmonies and evocative textures to create a dreamlike and sensory-rich ambiance.
-
-Modern: Bold and innovative, Modern music breaks conventional boundaries with dissonant and unconventional sounds, reflecting a dynamic and evolving spirit.
-
-Postmodern: Eclectic and diverse, Postmodern music blends various styles and influences, offering a playful and varied emotional landscape.
+Baroque Music: Opulent and dramatic, Baroque music features intricate patterns and contrasts, creating an atmosphere of grandeur and emotional depth.
+Classical Music: Elegant and balanced, Classical music offers clear melodies and structured forms, evoking a refined and serene mood.
+Romantic Music: Passionate and expressive, Romantic music explores deep emotions and vivid imagery, creating a sense of intense personal and dramatic experience.
+Impressionism Music: Subtle and atmospheric, Impressionist music uses fluid harmonies and evocative textures to create a dreamlike and sensory-rich ambiance.
+Modern Music: Bold and innovative, Modern music breaks conventional boundaries with dissonant and unconventional sounds, reflecting a dynamic and evolving spirit.
+Postmodern Music: Eclectic and diverse, Postmodern music blends various styles and influences, offering a playful and varied emotional landscape.
 
 Pop Music
 
-Pop: Catchy and upbeat, Pop music focuses on memorable melodies and rhythms, creating a lively and engaging atmosphere.
-
-Rock: Energetic and rebellious, Rock music delivers powerful rhythms and expressive vocals, capturing themes of freedom and youthful vigor.
-
-Pop Rock: Melodic and dynamic, Pop Rock combines catchy pop elements with the energy of rock, creating an accessible and vibrant sound.
-
-Dance Pop: High-energy and rhythmic, Dance Pop features infectious beats and electronic elements, designed to excite and engage on the dance floor.
-
-Indie Pop: Creative and original, Indie Pop offers a unique and personal sound with a mix of introspective and whimsical moods.
-
-Country Pop: Warm and relatable, Country Pop blends storytelling with catchy melodies, bridging rural charm with mainstream appeal.
+Pop Music: Catchy and upbeat, Pop music focuses on memorable melodies and rhythms, creating a lively and engaging atmosphere.
+Rock Music: Energetic and rebellious, Rock music delivers powerful rhythms and expressive vocals, capturing themes of freedom and youthful vigor.
+Pop Rock Music: Melodic and dynamic, Pop Rock combines catchy pop elements with the energy of rock, creating an accessible and vibrant sound.
+Dance Pop Music: High-energy and rhythmic, Dance Pop features infectious beats and electronic elements, designed to excite and engage on the dance floor.
+Indie Pop Music: Creative and original, Indie Pop offers a unique and personal sound with a mix of introspective and whimsical moods.
+Country Pop Music: Warm and relatable, Country Pop blends storytelling with catchy melodies, bridging rural charm with mainstream appeal.
 
 Electronic Music
 
-EDM: Pulsating and vibrant, EDM creates an energetic atmosphere with repetitive beats and synthesized sounds, perfect for dance and celebration.
-
-House: Hypnotic and uplifting, House music features steady rhythms and soulful elements, providing a groove that’s both engaging and immersive.
-
-Techno: Intense and mechanical, Techno music offers driving rhythms and futuristic sounds, creating a relentless and energetic vibe.
-
-Drum and Bass: Fast-paced and dynamic, Drum and Bass delivers high-energy rhythms and deep basslines, evoking a sense of urgency and excitement.
-
-Ambient: Serene and immersive, Ambient music uses slow-moving textures to create a calming and contemplative atmosphere.
-
-Synth Pop: Retro and catchy, Synth Pop features melodic synthesizers and electronic effects, evoking a nostalgic and modern feel.
+EDM Music: Pulsating and vibrant, EDM creates an energetic atmosphere with repetitive beats and synthesized sounds, perfect for dance and celebration.
+House Music: Hypnotic and uplifting, House music features steady rhythms and soulful elements, providing a groove that’s both engaging and immersive.
+Techno Music: Intense and mechanical, Techno music offers driving rhythms and futuristic sounds, creating a relentless and energetic vibe.
+Drum and Bass Music: Fast-paced and dynamic, Drum and Bass delivers high-energy rhythms and deep basslines, evoking a sense of urgency and excitement.
+Ambient Music: Serene and immersive, Ambient music uses slow-moving textures to create a calming and contemplative atmosphere.
+Synth Pop Music: Retro and catchy, Synth Pop features melodic synthesizers and electronic effects, evoking a nostalgic and modern feel.
 
 Experimental Music
 
 Noise Music: Challenging and abrasive, Noise Music uses chaotic sounds to create an intense and confrontational auditory experience.
-
-Minimalism: Tranquil and hypnotic, Minimalist music employs repetitive patterns and gradual changes to create a meditative and serene mood.
-
-Post-Industrial: Dark and dystopian, Post-Industrial music explores bleak themes with unconventional sounds, conveying an atmosphere of alienation.
-
-Avant-Garde: Innovative and provocative, Avant-Garde music pushes boundaries with unconventional forms, offering a thought-provoking and experimental experience.
-
-Electroacoustic: Diverse and exploratory, Electroacoustic music blends acoustic and electronic elements, creating a range of unique and transformative soundscapes.
+Minimalism Music: Tranquil and hypnotic, Minimalist music employs repetitive patterns and gradual changes to create a meditative and serene mood.
+Post-Industrial Music: Dark and dystopian, Post-Industrial music explores bleak themes with unconventional sounds, conveying an atmosphere of alienation.
+Avant-Garde Music: Innovative and provocative, Avant-Garde music pushes boundaries with unconventional forms, offering a thought-provoking and experimental experience.
+Electroacoustic Music: Diverse and exploratory, Electroacoustic music blends acoustic and electronic elements, creating a range of unique and transformative soundscapes.
 
 Ambient Music
-Dark Ambient: Eerie and unsettling, Dark Ambient creates a haunting atmosphere with deep drones and dissonant textures, evoking a sense of dread.
 
-Space Ambient: Expansive and serene, Space Ambient uses gentle melodies and vast soundscapes to evoke the feeling of outer space.
-
-Meditative Ambient: Calming and soothing, Meditative Ambient features soft sounds and nature elements to promote relaxation and mindfulness.
-
-New Age: Uplifting and peaceful, New Age music blends gentle melodies and spiritual themes to create a harmonious and positive environment.
-
-Field Recording: Authentic and diverse, Field Recording music captures environmental sounds, offering a unique and immersive perspective on the acoustic world.
-
-Drone: Deep and immersive, Drone music focuses on sustained tones to create a tranquil and meditative listening experience.
+Dark Ambient Music: Eerie and unsettling, Dark Ambient creates a haunting atmosphere with deep drones and dissonant textures, evoking a sense of dread.
+Space Ambient Music: Expansive and serene, Space Ambient uses gentle melodies and vast soundscapes to evoke the feeling of outer space.
+Meditative Ambient Music: Calming and soothing, Meditative Ambient features soft sounds and nature elements to promote relaxation and mindfulness.
+New Age Music: Uplifting and peaceful, New Age music blends gentle melodies and spiritual themes to create a harmonious and positive environment.
+Field Recording Music: Authentic and diverse, Field Recording music captures environmental sounds, offering a unique and immersive perspective on the acoustic world.
+Drone Music: Deep and immersive, Drone music focuses on sustained tones to create a tranquil and meditative listening experience.
